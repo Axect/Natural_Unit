@@ -3,5 +3,16 @@ name = "natural_unit"
 version = "0.1.0"
 authors = ["axect <axect@outlook.kr>"]
 edition = "2018"
+description = "Physical unit conversion program (SI, CGS, Natural, Geometrized)"
+repository = "https://github.com/Axect/Natural_Unit"
+license = "BSD-3-Clause"
+categories = ["science"]
+readme = "README.md"
+documentation = "https://docs.rs/natural_unit/"
+keywords = ["Scientific", "Physics", "Unit", "CGS", "SI", "Conversion", "Natural", "Geometrized"]
+
+[badges]
+travis-ci = { repository = "Axect/Natural_Unit", branch = "master" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
