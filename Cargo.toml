@@ -9,7 +9,7 @@ license = "BSD-3-Clause"
 categories = ["science"]
 readme = "README.md"
 documentation = "https://docs.rs/natural_unit/"
-keywords = ["Scientific", "Physics", "Unit", "CGS", "SI", "Conversion", "Natural", "Geometrized"]
+keywords = ["Scientific", "Physics", "Unit", "Conversion", "Natural"]
 
 [badges]
 travis-ci = { repository = "Axect/Natural_Unit", branch = "master" }
