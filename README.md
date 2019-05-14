@@ -1,5 +1,10 @@
 # Natural Unit
 
+[![On crates.io](https://img.shields.io/crates/v/natural_unit.svg)](https://crates.io/crates/natural_unit)
+[![On docs.rs](https://docs.rs/natural_unit/badge.svg)](https://docs.rs/natural_unit/)
+[![travis](https://api.travis-ci.org/Axect/Natural_Unit.svg?branch=master)](https://travis-ci.org/Axect/Natural_Unit)  
+![maintenance](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
+
 Physical unit conversion with Fundamental constants
 
 ## Unit System List
