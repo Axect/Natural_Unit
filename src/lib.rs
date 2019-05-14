@@ -27,20 +27,20 @@ pub enum Dimension {
 
 #[derive(Debug, Copy, Clone)]
 pub struct ConversionFactor {
-    conv_mass: f64,
-    conv_length: f64,
-    conv_time: f64,
-    conv_velocity: f64,
-    conv_momentum: f64,
-    conv_angular_velocity: f64,
-    conv_acceleration: f64,
-    conv_energy: f64,
-    conv_energy_density: f64,
-    conv_angular_momentum: f64,
-    conv_force: f64,
-    conv_power: f64,
-    conv_pressure: f64,
-    conv_density: f64,
+    pub conv_mass: f64,
+    pub conv_length: f64,
+    pub conv_time: f64,
+    pub conv_velocity: f64,
+    pub conv_momentum: f64,
+    pub conv_angular_velocity: f64,
+    pub conv_acceleration: f64,
+    pub conv_energy: f64,
+    pub conv_energy_density: f64,
+    pub conv_angular_momentum: f64,
+    pub conv_force: f64,
+    pub conv_power: f64,
+    pub conv_pressure: f64,
+    pub conv_density: f64,
 }
 
 impl ConversionFactor {
