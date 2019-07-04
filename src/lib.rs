@@ -131,19 +131,23 @@ pub struct FundamentalConstant {
 }
 
 /// CGS Unit (cm, g, s)
+/// 
+/// # Reference
+/// [NIST(2018)](http://physics.nist.gov/constants)
 pub const CONSTANT_CGS: FundamentalConstant = FundamentalConstant {
-    c: 2.99792458e+10,    // Speed of light (cm s^{-1})
-    G: 6.6742e-8,         // Gravitational constants (cm^3 g^{-1} s^{-2})
-    e: 1.60317653e-19,    // Elementary charge (C)
-    k_b: 1.3806505e-16,   // Boltzmann constant (erg K^{-1})
-    N_A: 6.0221415e+23,   // Avogadro constant (mol^{-1})
-    h: 6.6260693e-27,     // Planck constant (erg s)
-    hbar: 1.05457266e-27, // Planck Constant (erg s)
-    m_u: 1.66053886e-24,  // Atomic mass unit (g)
-    eV: 1.60217733e-12,   // Electron Volt (erg)
-    m_solar: 1.98848e+33, // Solar mass (g)
-    r_solar: 6.9551E+10   // Solar radius (cm)
+    c: 2.99792458e+10,      // Speed of light (cm s^{-1})
+    G: 6.67430e-8,          // Gravitational constants (cm^3 g^{-1} s^{-2})
+    e: 1.602176634e-19,     // Elementary charge (C)
+    k_b: 1.380649e-16,      // Boltzmann constant (erg K^{-1})
+    N_A: 6.02214076e+23,    // Avogadro constant (mol^{-1})
+    h: 6.62607015e-27,      // Planck constant (erg s)
+    hbar: 1.05457182e-27,   // Planck Constant (erg s)
+    m_u: 1.66053906660e-24, // Atomic mass unit (g)
+    eV: 1.602176634e-12,    // Electron Volt (erg)
+    m_solar: 1.98848e+33,   // Solar mass (g)
+    r_solar: 6.957E+10     // Solar radius (cm)
 };
+
 // =========================================================
 // Reference Constants
 // =========================================================
