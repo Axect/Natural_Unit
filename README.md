@@ -12,6 +12,7 @@ Physical unit conversion with Fundamental constants
 - [x] SI
 - [x] CGS
 - [x] Geometrized(With CGS)
+- [x] Geometrized with unit solar mass
 - [x] Natural Unit(With CGS)
 - [x] Natural Unit(MeV)
 - [x] Natural Unit(Gaussian)
