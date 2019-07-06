@@ -11,4 +11,8 @@ fn main() {
         c.powi(3) / (G * m_solar),
     );
     println!("{:#?}", cgs_to_geom);
+
+    let r_solar = CONSTANT_CGS.r_solar;
+    let new_r = convert(r_solar, Length, cgs_to_geom);
+    println!("{}", new_r);
 }
