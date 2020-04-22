@@ -1,5 +1,11 @@
 pub use self::Dimension::*;
 
+/// Unit System
+///
+/// * SI
+/// * CGS
+/// * Geometrized   (c=G=1)
+/// * Natural       (c=h=1)
 pub enum UnitSystem {
     SI,
     CGS,
@@ -7,6 +13,22 @@ pub enum UnitSystem {
     Natural,
 }
 
+/// Dimension
+///
+/// * Time
+/// * Length
+/// * Mass
+/// * Velocity
+/// * Momentum
+/// * Angular velocity
+/// * Acceleration
+/// * Energy
+/// * Energy density
+/// * Angular momentum
+/// * Force
+/// * Power
+/// * Pressure
+/// * Density
 #[derive(Debug, Clone, Copy)]
 pub enum Dimension {
     Time,
@@ -125,6 +147,7 @@ pub struct FundamentalConstant {
     pub h: f64,
     pub hbar: f64,
     pub m_u: f64,
+    pub m_e: f64,
     pub eV: f64,
     pub m_solar: f64,
     pub r_solar: f64,
@@ -143,23 +166,27 @@ pub const CONSTANT_CGS: FundamentalConstant = FundamentalConstant {
     h: 6.62607015e-27,      // Planck constant (erg s)
     hbar: 1.05457182e-27,   // Planck Constant (erg s)
     m_u: 1.66053906660e-24, // Atomic mass unit (g)
+    m_e: 9.1093837015e-28,  // Electron mass (g)
     eV: 1.602176634e-12,    // Electron Volt (erg)
     m_solar: 1.98848e+33,   // Solar mass (g)
-    r_solar: 6.957E+10     // Solar radius (cm)
+    r_solar: 6.957e+10      // Solar radius (cm)
 };
 
 // =========================================================
 // Reference Constants
 // =========================================================
+/// Default Conversion Factor
+///
+/// * CGS to SI : `cgs_to_si`
+/// * CGS to Geometrized : `cgs_to_geom`
+/// * CGS to Natural : `cgs_to_natural`
 pub trait DefaultFactors {
     fn cgs_to_si() -> ConversionFactor;
     fn cgs_to_geom() -> ConversionFactor;
     fn cgs_to_natural() -> ConversionFactor;
 }
 
-pub struct Reference {
-    null: (),
-}
+pub struct Reference { }
 
 impl DefaultFactors for Reference {
     fn cgs_to_si() -> ConversionFactor {
